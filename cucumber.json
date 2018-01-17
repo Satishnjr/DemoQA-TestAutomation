@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 13245580648,
+              "duration": 50945256286,
               "status": "passed"
             },
             "match": {
@@ -14,14 +14,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "Select Navigation for Calculators and Indicators Nav Link",
+        "line": 16,
+        "name": "Verify that the new user registration is successful after passing correct inputs.",
         "description": "",
-        "id": "navigation-testing-scenarios;select-navigation-for-calculators-and-indicators-nav-link",
+        "id": "new-user-registration;verify-that-the-new-user-registration-is-successful-after-passing-correct-inputs.;;2",
         "after": [
           {
             "result": {
-              "duration": 11625520057,
+              "duration": 4020151297,
               "status": "passed"
             },
             "match": {
@@ -30,51 +30,135 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 88877808844,
+              "duration": 35358832180,
               "status": "passed"
             },
-            "line": 8,
-            "name": "I open EMI Calculator website",
+            "line": 4,
+            "name": "I open demoqa website",
             "match": {
-              "location": "HomePageSteps.i_open_EMI_Calculator_website()"
+              "location": "RegistrationPageSteps.i_open_demoqa_website()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8753469773,
+              "duration": 2767510144,
               "status": "passed"
             },
-            "line": 9,
-            "name": "I click on Calculators and Indicators Nav Link",
+            "line": 5,
+            "name": "I click on registration link",
             "match": {
-              "location": "HomePageSteps.i_click_on_Calculators_and_Indicators_Nav_Link()"
+              "location": "RegistrationPageSteps.i_click_on_registration_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 764955617,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter \"Satish\" \"N\" in input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Satish",
+                  "offset": 9
+                },
+                {
+                  "val": "N",
+                  "offset": 18
+                }
+              ],
+              "location": "RegistrationPageSteps.i_enter_in_input_box(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 272939065,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I select Single radio button",
+            "match": {
+              "location": "RegistrationPageSteps.i_select_Single_radio_button()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 6811377935,
+              "duration": 271946968,
               "status": "passed"
             },
-            "line": 10,
-            "name": "I Verify it shows all the sub links",
+            "line": 8,
+            "name": "I select Cricket check box",
             "match": {
-              "location": "HeaderNavSteps.i_Verify_it_shows_all_the_sub_links()"
+              "location": "RegistrationPageSteps.i_select_Cricket_check_box()"
             },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5854348928,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select Country from dropdown",
+            "match": {
+              "location": "RegistrationPageSteps.i_select_Country_from_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I select Date of Birth from dropdown",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "I enter \"8309713319\" \"Satishnj\" \"sksatishreddy@gmail.com\" \"Satish@123\" \"Satish@123\" in input box",
+            "match": {},
+            "matchedColumns": [
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "I submit button, then the user registration should be successful",
+            "match": {},
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Navigation Testing Scenarios",
+    "name": "New user registration",
     "description": "",
-    "id": "navigation-testing-scenarios",
+    "id": "new-user-registration",
     "keyword": "Feature",
-    "uri": "features/Navigation.feature"
+    "uri": "features/RegistrationForm.feature"
   }
 ]
