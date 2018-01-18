@@ -30,20 +30,36 @@ public class RegistrationPageAction {
 		RegistrationPageObjects.cricketCheckBox.click();
 
 	}
-	
-	public static void country() throws InterruptedException {
-		RegistrationPageObjects.countryDropDown.click();
+
+	public static void country() {
+		// RegistrationPageObjects.countryDropDown.click();
 		Select country = new Select(RegistrationPageObjects.countryDropDown);
 		country.selectByValue("India");
-		Thread.sleep(5000);	
+
 	}
-/*
-	public static void country(WebDriver driver) throws InterruptedException {
-		RegistrationPageObjects.countryDropDown.click();
-		Select country = new Select(driver.findElement(By
-				.cssSelector("#dropdown_7")));
-		country.selectByValue("India");
+
+	public static void dateOfBirth(WebDriver driver)
+			throws InterruptedException {
+		Select month = new Select(RegistrationPageObjects.monthDropDown);
+		month.selectByValue("5");
+
+		Select day = new Select(RegistrationPageObjects.dayDropDown);
+		day.selectByIndex(24);
+
+		Select year = new Select(RegistrationPageObjects.yearDropDown);
+		year.selectByVisibleText("1991");
+		
+
+	}
+
+	public static void enterData(String phone, String uname,
+			String eMail, String pwd, String cPwd) throws InterruptedException {
+		RegistrationPageObjects.phoneNum.sendKeys(phone);
+		RegistrationPageObjects.userName.sendKeys(uname);
+		RegistrationPageObjects.email.sendKeys(eMail);
+		RegistrationPageObjects.password.sendKeys(pwd);
+		RegistrationPageObjects.conPassword.sendKeys(cPwd);
 		Thread.sleep(5000);
-	}*/
+	}
 
 }

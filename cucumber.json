@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 50945256286,
+              "duration": 11125435264,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 4020151297,
+              "duration": 1860796092,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 35358832180,
+              "duration": 6139239096,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 2767510144,
+              "duration": 2214081326,
               "status": "passed"
             },
             "line": 5,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 764955617,
+              "duration": 813540511,
               "status": "passed"
             },
             "line": 6,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 272939065,
+              "duration": 303172120,
               "status": "passed"
             },
             "line": 7,
@@ -96,7 +96,7 @@
           },
           {
             "result": {
-              "duration": 271946968,
+              "duration": 269221878,
               "status": "passed"
             },
             "line": 8,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 5854348928,
+              "duration": 481934794,
               "status": "passed"
             },
             "line": 9,
@@ -120,20 +120,48 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2429023283,
+              "status": "passed"
             },
             "line": 10,
             "name": "I select Date of Birth from dropdown",
-            "match": {},
+            "match": {
+              "location": "RegistrationPageSteps.i_select_Date_of_Birth_from_dropdown()"
+            },
             "keyword": "And "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 6854119230,
+              "status": "passed"
             },
             "line": 11,
-            "name": "I enter \"8309713319\" \"Satishnj\" \"sksatishreddy@gmail.com\" \"Satish@123\" \"Satish@123\" in input box",
-            "match": {},
+            "name": "I enter \"8309713319\" \"Satishnj\" \"sksatishreddy@gmail.com\" \"Satish@12345\" \"Satish@12345\" in input box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8309713319",
+                  "offset": 9
+                },
+                {
+                  "val": "Satishnj",
+                  "offset": 22
+                },
+                {
+                  "val": "sksatishreddy@gmail.com",
+                  "offset": 33
+                },
+                {
+                  "val": "Satish@12345",
+                  "offset": 59
+                },
+                {
+                  "val": "Satish@12345",
+                  "offset": 74
+                }
+              ],
+              "location": "RegistrationPageSteps.i_enter_in_input_box(String,String,String,String,String)"
+            },
             "matchedColumns": [
               2,
               3,

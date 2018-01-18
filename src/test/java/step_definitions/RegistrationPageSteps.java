@@ -53,33 +53,26 @@ public class RegistrationPageSteps {
 	}
 
 	@When("^I select Country from dropdown$")
-	public void i_select_Country_from_dropdown()
-			throws Throwable {
+	public void i_select_Country_from_dropdown() throws Throwable {
 		PageFactory.initElements(driver, RegistrationPageObjects.class);
 		RegistrationPageAction.country();
 	}
 
-	/*
-	 * @When("^I select Country from dropdown$") public void
-	 * i_select_Country_from_dropdown() throws Throwable {
-	 * PageFactory.initElements(driver, RegistrationPageObjects.class);
-	 * RegistrationPageAction.country(driver); }
-	 */
+	@When("^I select Date of Birth from dropdown$")
+	public void i_select_Date_of_Birth_from_dropdown() throws Throwable {
+		PageFactory.initElements(driver, RegistrationPageObjects.class);
+		RegistrationPageAction.dateOfBirth(driver);
+	}
 
-	/*
-	 * @When("^I select Date of Birth from dropdown$") public void
-	 * i_select_Date_of_Birth_from_dropdown() throws Throwable {
-	 * PageFactory.initElements(driver, RegistrationPageObjects.class);
-	 * RegistrationPageAction.registrationForm(driver); }
-	 * 
-	 * @When(
-	 * "^I enter \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" in input box$"
-	 * ) public void i_enter_in_input_box(String arg1, String arg2, String arg3,
-	 * String arg4, String arg5) throws Throwable {
-	 * PageFactory.initElements(driver, RegistrationPageObjects.class);
-	 * RegistrationPageAction.registrationForm(driver); }
-	 * 
-	 * @Then("^I submit button, then the user registration should be successful$"
+	
+	  @When(
+	  "^I enter \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" in input box$"
+	  ) public void i_enter_in_input_box(String phone, String uname, String eMail,
+			  String pwd, String cPwd) throws Throwable {
+	  PageFactory.initElements(driver, RegistrationPageObjects.class);
+	  RegistrationPageAction.enterData(phone, uname, eMail, pwd, cPwd); }
+	  
+	 /* @Then("^I submit button, then the user registration should be successful$"
 	 * ) public void
 	 * i_submit_button_then_the_user_registration_should_be_successful() throws
 	 * Throwable { PageFactory.initElements(driver,
