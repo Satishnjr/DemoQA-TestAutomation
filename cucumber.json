@@ -6,7 +6,11 @@
         "before": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 11125435264,
+=======
+              "duration": 9939117503,
+>>>>>>> 0b017ef029d72c18bcc2acf9d9c86da7121d2f62
               "status": "passed"
             },
             "match": {
@@ -14,6 +18,7 @@
             }
           }
         ],
+<<<<<<< HEAD
         "line": 16,
         "name": "Verify that the new user registration is successful after passing correct inputs.",
         "description": "",
@@ -22,6 +27,16 @@
           {
             "result": {
               "duration": 1860796092,
+=======
+        "line": 3,
+        "name": "Select Navigation for Header Menu",
+        "description": "",
+        "id": "navigation-testing-scenarios;select-navigation-for-header-menu",
+        "after": [
+          {
+            "result": {
+              "duration": 1601511310,
+>>>>>>> 0b017ef029d72c18bcc2acf9d9c86da7121d2f62
               "status": "passed"
             },
             "match": {
@@ -34,6 +49,7 @@
         "steps": [
           {
             "result": {
+<<<<<<< HEAD
               "duration": 6139239096,
               "status": "passed"
             },
@@ -41,11 +57,21 @@
             "name": "I open demoqa website",
             "match": {
               "location": "RegistrationPageSteps.i_open_demoqa_website()"
+=======
+              "duration": 5703300458,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open DemoQA website",
+            "match": {
+              "location": "HomePageSteps.i_open_DemoQA_website()"
+>>>>>>> 0b017ef029d72c18bcc2acf9d9c86da7121d2f62
             },
             "keyword": "Given "
           },
           {
             "result": {
+<<<<<<< HEAD
               "duration": 2214081326,
               "status": "passed"
             },
@@ -174,6 +200,15 @@
           {
             "result": {
               "status": "undefined"
+=======
+              "duration": 689815269,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Verify all the links in menu",
+            "match": {
+              "location": "HomePageSteps.i_Verify_all_the_links_in_menu()"
+>>>>>>> 0b017ef029d72c18bcc2acf9d9c86da7121d2f62
             },
             "line": 12,
             "name": "I submit button, then the user registration should be successful",
