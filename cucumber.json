@@ -6,11 +6,7 @@
         "before": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 11125435264,
-=======
-              "duration": 9939117503,
->>>>>>> 0b017ef029d72c18bcc2acf9d9c86da7121d2f62
+              "duration": 14555021550,
               "status": "passed"
             },
             "match": {
@@ -18,16 +14,6 @@
             }
           }
         ],
-<<<<<<< HEAD
-        "line": 16,
-        "name": "Verify that the new user registration is successful after passing correct inputs.",
-        "description": "",
-        "id": "new-user-registration;verify-that-the-new-user-registration-is-successful-after-passing-correct-inputs.;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 1860796092,
-=======
         "line": 3,
         "name": "Select Navigation for Header Menu",
         "description": "",
@@ -35,8 +21,73 @@
         "after": [
           {
             "result": {
-              "duration": 1601511310,
->>>>>>> 0b017ef029d72c18bcc2acf9d9c86da7121d2f62
+              "duration": 3150570016,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.embedScreenshot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5683486375,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open DemoQA website",
+            "match": {
+              "location": "HomePageSteps.i_open_DemoQA_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1147041962,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I Verify all the links in menu",
+            "match": {
+              "location": "HomePageSteps.i_Verify_all_the_links_in_menu()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Navigation Testing Scenarios",
+    "description": "",
+    "id": "navigation-testing-scenarios",
+    "keyword": "Feature",
+    "uri": "features/Navigation.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7525287964,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Verify that the new user registration is successful after passing correct inputs.",
+        "description": "",
+        "id": "new-user-registration;verify-that-the-new-user-registration-is-successful-after-passing-correct-inputs.;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2782615432,
               "status": "passed"
             },
             "match": {
@@ -49,30 +100,19 @@
         "steps": [
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 6139239096,
+              "duration": 10808852241,
               "status": "passed"
             },
             "line": 4,
             "name": "I open demoqa website",
             "match": {
               "location": "RegistrationPageSteps.i_open_demoqa_website()"
-=======
-              "duration": 5703300458,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I open DemoQA website",
-            "match": {
-              "location": "HomePageSteps.i_open_DemoQA_website()"
->>>>>>> 0b017ef029d72c18bcc2acf9d9c86da7121d2f62
             },
             "keyword": "Given "
           },
           {
             "result": {
-<<<<<<< HEAD
-              "duration": 2214081326,
+              "duration": 4710072618,
               "status": "passed"
             },
             "line": 5,
@@ -84,7 +124,7 @@
           },
           {
             "result": {
-              "duration": 813540511,
+              "duration": 5172347766,
               "status": "passed"
             },
             "line": 6,
@@ -110,7 +150,7 @@
           },
           {
             "result": {
-              "duration": 303172120,
+              "duration": 334412911,
               "status": "passed"
             },
             "line": 7,
@@ -122,7 +162,7 @@
           },
           {
             "result": {
-              "duration": 269221878,
+              "duration": 326565571,
               "status": "passed"
             },
             "line": 8,
@@ -134,7 +174,7 @@
           },
           {
             "result": {
-              "duration": 481934794,
+              "duration": 1107036509,
               "status": "passed"
             },
             "line": 9,
@@ -146,7 +186,7 @@
           },
           {
             "result": {
-              "duration": 2429023283,
+              "duration": 2677148684,
               "status": "passed"
             },
             "line": 10,
@@ -158,11 +198,11 @@
           },
           {
             "result": {
-              "duration": 6854119230,
+              "duration": 8704234886,
               "status": "passed"
             },
             "line": 11,
-            "name": "I enter \"8309713319\" \"Satishnj\" \"sksatishreddy@gmail.com\" \"Satish@12345\" \"Satish@12345\" in input box",
+            "name": "I enter \"8309713319\" \"Satishnj\" \"sksatishreddy@gmail.com\" \"Satish@123\" \"Satish@123\" in input box",
             "match": {
               "arguments": [
                 {
@@ -178,12 +218,12 @@
                   "offset": 33
                 },
                 {
-                  "val": "Satish@12345",
+                  "val": "Satish@123",
                   "offset": 59
                 },
                 {
-                  "val": "Satish@12345",
-                  "offset": 74
+                  "val": "Satish@123",
+                  "offset": 72
                 }
               ],
               "location": "RegistrationPageSteps.i_enter_in_input_box(String,String,String,String,String)"
@@ -200,15 +240,6 @@
           {
             "result": {
               "status": "undefined"
-=======
-              "duration": 689815269,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "I Verify all the links in menu",
-            "match": {
-              "location": "HomePageSteps.i_Verify_all_the_links_in_menu()"
->>>>>>> 0b017ef029d72c18bcc2acf9d9c86da7121d2f62
             },
             "line": 12,
             "name": "I submit button, then the user registration should be successful",
