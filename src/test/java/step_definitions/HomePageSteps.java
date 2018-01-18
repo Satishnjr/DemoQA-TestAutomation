@@ -15,9 +15,10 @@ import cucumber.api.java.en.Then;
 public class HomePageSteps {
 	public WebDriver driver;
 	public List<HashMap<String, String>> datamap;
-
+	
 	public HomePageSteps() {
 		driver = Hooks.driver;
+		PageFactory.initElements(driver, HomePageObjects.class);
 	}
 
 	@Given("^I open DemoQA website$")
@@ -27,7 +28,7 @@ public class HomePageSteps {
 
 	@Then("^I Verify all the links in menu$")
 	public void i_Verify_all_the_links_in_menu() throws Throwable {
-		PageFactory.initElements(driver, HomePageObjects.class);
+		//PageFactory.initElements(driver, HomePageObjects.class);
 		HomePageAction.verifyHeaderLinks(driver);
 	}
 
