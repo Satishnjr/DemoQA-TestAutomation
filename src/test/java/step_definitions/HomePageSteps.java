@@ -9,9 +9,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import pageobjects.HomePageObjects;
-import utility.Hooks;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import helpers.Hooks;
 
 public class HomePageSteps{
 	public WebDriver driver;
