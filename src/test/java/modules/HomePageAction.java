@@ -1,47 +1,26 @@
 package modules;
 
-import helpers.Log;
+import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Reporter;
 
 import pageobjects.HomePageObjects;
 
 public class HomePageAction {
 
-	public static void calculator(WebDriver driver) throws Exception {
+	public static void verifyHeaderLinks(WebDriver driver) {
+		
+		List<WebElement> items = HomePageObjects.verifyMenuLinks;
 
-		/*
-		 * WebDriverWait wait = new WebDriverWait(driver, 10);
-		 * wait.until(ExpectedConditions
-		 * .presenceOfElementLocated(HomePage.locator));
-		 */
-
-		HomePageObjects.calculatorsDropDown.click();
-
-		Log.info("Click action is perfromed on Calculator and Indicators Link");
-
-		Reporter.log("Click action is perfromed on Calculator and Indicators Link");
+		Reporter.log("Found Menu links: ", items.size());
+		System.out.println(items.size());
+		Assert.assertTrue(items.size() > 5);
+		Assert.assertTrue(items.size() < 10);
+		for (WebElement links : items) {
+			System.out.println(links.getText());
+		}
 	}
-
-	public static void faqNav(WebDriver driver) {
-
-		HomePageObjects.faqsDropDown.click();
-
-		Log.info("Click action is perfromed on faqs Link");
-
-		Reporter.log("Click action is perfromed on faqs Link");
-	}
-
-	public static void mobileMenuNav(WebDriver driver) {
-		HomePageObjects.mobilemenu.click();
-
-		Log.info("Click action is perfromed on faqs Link");
-
-		Reporter.log("Click action is perfromed on faqs Link");
-
-	}
-
-	
-
 }
